@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="customerBean" class="Spring.Question1.myclass.Customer">
+	<property name="customerId" value="01"></property>
+	<property name="customerName" value="Abhay"></property>
+	<property name="customerContact" value="9969856967"></property>
+	<property name="customerAddress" ref="addressBean"></property>
+</bean>
+
+<bean id="addressBean" class="Spring.Question1.myclass.Address">
+	<property name="street" value="S.V.Road"></property>
+	<property name="city" value="Mumbai"></property>
+	<property name="state" value="Maharashtra"></property>
+	<property name="zip" value="400067"></property>
+	<property name="country" value="India"></property>
+</bean>
+
+
+<bean id="customerBean1" class="Spring.Question1.myclass.Customer">
+	<constructor-arg index="0" value="02"></constructor-arg>
+	<constructor-arg index="1" value="jidnyasa"></constructor-arg>
+	<constructor-arg index="2" value="8149951469"></constructor-arg>
+	<constructor-arg index="3" ref="addressBean1"></constructor-arg>
+</bean>
+
+<bean id="addressBean1" class="Spring.Question1.myclass.Address">
+	<constructor-arg index="0" value="S,V.Road"></constructor-arg>
+	<constructor-arg index="1" value="Mumbai"></constructor-arg>
+	<constructor-arg index="2" value="Maharashtra"></constructor-arg>
+	<constructor-arg index="3" value="400067"></constructor-arg>
+	<constructor-arg index="4" value="India"></constructor-arg>
+</bean>
+
+</beans>

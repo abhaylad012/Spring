@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="studentBean" class="Spring.Question5.myclass.Student">
+<property name="studentId" value="01"></property>
+<property name="studentName" value="Abhay"></property>
+</bean>
+
+
+<bean id="studentBean1" class="Spring.Question5.myclass.Student">
+<property name="studentName" value="Naruto"></property>
+</bean>
+
+<!-- <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean> -->
+
+</beans>

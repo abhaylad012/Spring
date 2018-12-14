@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-init-method="myInit" default-destroy-method="myDestroy">
+
+<bean id="customerBean" class="Spring.Question8.myclass.Customer" init-method="myInit" destroy-method="myDestroy">
+
+</bean>
+
+</beans>
